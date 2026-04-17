@@ -8,4 +8,4 @@ mucho
 
 sueño
 
-![texto que explica la imagen](./images (01))
+![texto que explica la imagen](./images (1).jpg)
