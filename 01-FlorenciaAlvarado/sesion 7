@@ -1,0 +1,32 @@
+
+Clase 24 abril:
+
+push(); //guardar condiciones actuales. pop(); // vuelve a condiciones cuando dijiste push function setup() { createCanvas(400, 400); }
+
+function draw() {
+
+//push push(); background(220);
+
+translate(width/2,height/2); ellipse(0,0,100,100);
+
+push(); //guardar condiciones actuales fill(255,0,0,100); ellipse( width/2, height/2,100,100); pop(); // vuelve a condiciones cuando dijiste push
+
+}
+
+let medioX; let medioY; let separacion = 5; let poquito = 10; let direccion = 1
+
+function setup() { createCanvas(windowWidth, windowHeight);
+
+medioX= width / 2 medioY= height / 2
+
+}
+
+function draw() { background(222, 6, 24, 40);
+
+for (let x = 0; x < width; x=x+separacion) { line ( x, x, x, x - poquito); }
+
+poquito = poquito + direccion * 10 if (poquito > height/2) { direccion = - 1
+
+}
+
+if(poquito < - height/2){ direccion = 1; } noFill(); ellipse( medioX,medioY,poquito/2,poquito/2) }
